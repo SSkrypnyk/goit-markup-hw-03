@@ -11,12 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="header">
+        <div class="container">
+                <nav class="header-nav"></nav>
         <a href="/index.html" class="logo"> <span class="accent">Web</span>Studio </a>
-        <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item"> <a href="#" class="nav-link current">Студия</a></li>
                 <li class="header-nav-item"> <a href="./portfolio.html" class="nav-link">Портфолио</a></li>
@@ -27,32 +31,37 @@
             <li class="address-item"><a href="mailto:info@devstudio.com" class="header-link">info@devstudio.com</a></li>
             <li class="address-item"><a href="tel:+380961111111" class="header-link">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main>
         <section class="section-hero">
-            <h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero-btn button">Заказать услугу</button>
+            </div>
         </section>
         <section class="features">
-            <h2 class="features-tittle visually-hidden">Особенности</h2>
-            <ul class="features-list">
-                <li class="features-item">
-                    <h3 class="features-subtittle">Внимание к деталям</h3>
-                    <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-subtittle">Пунктуальность</h3>
-                    <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-subtittle">Планирование</h3>
-                    <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-subtittle">Современные технологии</h3>
-                    <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="features-tittle visually-hidden">Особенности</h2>
+                <ul class="features-list">
+                    <li class="features-item">
+                        <h3 class="features-subtittle">Внимание к деталям</h3>
+                        <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="features-item">
+                        <h3 class="features-subtittle">Пунктуальность</h3>
+                        <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="features-item">
+                        <h3 class="features-subtittle">Планирование</h3>
+                        <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="features-item">
+                        <h3 class="features-subtittle">Современные технологии</h3>
+                        <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="works">
             <h2 class="works-tittle">Чем мы занимаемся</h2>
