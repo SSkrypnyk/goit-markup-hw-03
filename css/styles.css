@@ -30,6 +30,9 @@ ul,
 p {
     margin-top: 0;
 }
+p {
+    margin-bottom: 0;
+}
 ul.address-list {
     margin-bottom: 0;
 }
@@ -39,6 +42,7 @@ a {
 }
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 address {
@@ -80,7 +84,7 @@ margin-left: 50px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
+/*     outline: 1px solid tomato; */
 }
 .logo {
     margin-right: 93px;
@@ -299,8 +303,18 @@ padding-bottom: 94px;
 .nav-link.current {
     color: var(--accent-color);
 }
-.container.card-list {
-    padding-top: 50px;
+/* portfolio */
+.portfolio-btn-list {
+    padding-top: 94px;
+    padding-bottom: 34px;
+}
+.portfolio-btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-btn-item:not(:last-child) {
+    margin-right: 8px;
 }
 .portfolio-btn-list {
     margin-bottom: 0;
@@ -323,8 +337,18 @@ padding-bottom: 94px;
     background-color: var(--bg-btn-color);
     color: var(--white-text-color);
 }
+/* cards */
+.container.card-list {
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio-card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .portfolio-card-list {
     margin-bottom: 0;
+    padding-top: 0;
 }
 .project {
     margin-bottom: 20px;
@@ -332,7 +356,20 @@ padding-bottom: 94px;
 }
 .portfolio-card-item {
     padding-bottom: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    margin-right: 27px;
+    /* вопрос по бордеру (бордер учитывается в ширину)*/
+}
+.portfolio-card-item:nth-child(3n) {
+    ;margin-right: 0;
+}
+.portfolio-card-item:nth-child(-n+3) {
     margin-bottom: 0;
+}
+.project-text {
+    margin-left: 24px;
+    margin-right: 24px;
 }
 .portfolio-subtittle {
     margin-bottom: 4px;
@@ -347,6 +384,7 @@ padding-bottom: 94px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
 .footer .logo {
     color: var(--white-text-color);
 }
